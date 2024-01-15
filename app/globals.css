@@ -25,3 +25,38 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Estilos específicos para el navbar */
+.nav {
+  @apply flex justify-between items-center
+  w-full
+  h-24 px-4 
+  text-white 
+  bg-stone-700
+  bg-opacity-60
+  backdrop-blur-md
+  backdrop-opacity-95
+  fixed
+  min-[320px]:text-center max-[600px]:h-12
+}
+
+@layer components {
+  .hero {
+    @apply relative flex place-items-center
+    before:absolute 
+    before:lg:h-[360px] z-[-1]
+  }
+
+  .btn-primary {
+    @apply mt-6 py-2 px-4
+    bg-blue-500
+    text-white font-semibold
+    rounded-lg
+    shadow-md
+    hover:bg-blue-700
+    focus:outline-none
+    focus:ring-2
+    focus:ring-blue-400
+    focus:ring-opacity-75
+  }
+}
