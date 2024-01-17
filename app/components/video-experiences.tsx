@@ -1,11 +1,12 @@
 'use client'
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function VideoSection() {
   return (
-    <section className="bg-stone-800 py-6 px-6 bg-gradient-to-t from-stone-500 to-transparent to-20%">
-      <div className="container mx-auto grid element lg:grid-cols-3 gap-8">
+    <section className="bg-stone-800 py-6 px-6 bg-gradient-to-t from-stone-600 to-transparent to-20%">
+      <div className="mx-auto grid element lg:grid-cols-3 gap-6">
         {/* Video 1 */}
         <div className="relative overflow-hidden rounded-lg">
           <video className="w-full h-full object-cover" autoPlay muted loop>
@@ -14,11 +15,11 @@ export default function VideoSection() {
           </video>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold mb-4">
                 City routes
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl">
-                Experience
+                Experiences from 99€
               </p>
             </div>
           </div>
@@ -32,7 +33,7 @@ export default function VideoSection() {
           </video>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold mb-4">
                 Countryside routes
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl">
@@ -50,7 +51,7 @@ export default function VideoSection() {
           </video>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold mb-4">
                 Rental car
               </h1>
             </div>

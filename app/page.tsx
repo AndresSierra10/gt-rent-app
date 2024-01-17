@@ -3,7 +3,7 @@ import BannerHome from './components/banner-home/page'
 import SectionExperiences from './components/video-experiences'
 import SectionBooking from './components/booking/page'
 import SectionProposeText from './components/propose-text/page'
- 
+
 export const metadata: Metadata = {
   title: 'GT RENT',
 }
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <div className="hero">
+      <div className="hero__section">
         <BannerHome />
       </div>
       <div>

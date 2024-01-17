@@ -1,11 +1,20 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from './components/navbar'
 import { Footer } from './components/footer'
 import Favicon from './gt-rent.ico';
+import Contact from './components/contact-float-button'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const myFont = localFont({
+  src: [
+    {
+      path: '../public/fonts/monument-extended-v3/PPMonumentExtended-Light-BF645465a264007.otf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
 
 export const metadata: Metadata = {
   title: 'GT Rent',
@@ -20,7 +29,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={myFont.className}>
+        <Contact />
         <header>
           <Navbar />
         </header>

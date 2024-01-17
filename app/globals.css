@@ -47,6 +47,21 @@ body {
     before:lg:h-[360px] z-[-1]
   }
 
+  .hero__section {
+    @apply relative h-[90vh] flex place-items-center
+    before:absolute 
+    before:lg:h-[360px] z-[-1]
+  }
+  
+  .hero__video {
+    @apply w-full h-full object-cover;
+    -o-object-fit: cover;
+  }
+  
+  .hero__bg {
+    @apply relative w-full h-full;
+  }
+
   .btn-primary {
     @apply mt-6 py-2 px-4
     bg-blue-500
@@ -59,4 +74,18 @@ body {
     focus:ring-blue-400
     focus:ring-opacity-75
   }
+
+  .btn-solid-secondary {
+    @apply
+    mt-6 py-2 px-4
+    bg-blue-500
+    text-white border uppercase
+    px-[2.1875rem]
+    py-1
+    rounded-[1.1625rem]
+    border-solid
+    hover:bg-blue-700
+    border-transparent;
+  }
+  
 }
