@@ -16,7 +16,7 @@ export function Navbar() {
     window.history.replaceState(null, '', newPath)
   }
 
-    const [selectedFlag, setSelectedFlag] = useState('eeuu');
+  const [selectedFlag, setSelectedFlag] = useState('eeuu');
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -52,15 +52,15 @@ export function Navbar() {
         {links.map(({ id, link, dropdownItems  }) => (
           <li
             key={id}
-            className="nav-links text-sm px-5 cursor-pointer capitalize font-medium text-white-500 hover:scale-125 hover:text-blue-500 duration-200 link-underline"
+            className="nav-links text-sm px-5 cursor-pointer text-transform: uppercase font-extrabold hover:scale-95 hover:text-blue-500 duration-200 link-underline"
           >
 
           {dropdownItems ? (
-            <div className="relative group">
+            <div className="relative group text-center">
               <span>{link}</span>
-              <ul className="fixed hidden space-y-25 flex flex-col divide-y divide-gray-100 py-4 bg-sky-400 bg-opacity-95 text-white group-hover:block rounded-md">
+              <ul className="fixed hidden px-8 space-y-25 py-4 text-transform: capitalize bg-stone-200 bg-opacity-95 text-black font-extrabold group-hover:block rounded-md">
                 {dropdownItems.map((item, index) => (
-                  <li key={index} className="px-4 py-1">
+                  <li key={index} className="px-2 py-2">
                     <a>{item}</a>
                   </li>
                 ))}
